@@ -99,7 +99,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
           return
         }
 
-        if (amount <= 1) throw Error();
+        if (amount < 1) throw Error();
 
         productExists.amount = amount;
 
